@@ -1,6 +1,5 @@
 import time
 
-
 BASE_URL = 'https://www.binance.com/'
 
 ETH = 'ETHUSDT'
@@ -17,8 +16,8 @@ CREATE TABLE IF NOT EXISTS eth_token (
 """
 
 DELETE_OLD_DATA = f"""
-    DELETE 
-    FROM eth_token 
+    DELETE
+    FROM eth_token
     WHERE time < {int(time.time()) - HOUR}
 """
 

@@ -1,51 +1,43 @@
 
-# Tracker of ticker price on Binance
+## Трекер цены фьючерса ETHUSDT
 
-Code track changings of XRP/USDT price and compare it with the highest price for last hour. In case, when difference reach 1%, program sent message to console.
+Трекер отслеживает изменения стоимости фьючерса ETHUSDT в реальном времени с учетом корреляционного влияния фьючерса BTCUSDT
 
+## Запустить локально
 
-## Run Locally
-
-Clone the project
+Склонируйте репозиторий
 
 ```bash
   git clone git@github.com:vap3003/test_binance.git
 ```
 
-Go to the project directory
+Перейдите в деректорию проекта
 
 ```bash
   cd test_binance
 ```
 
-Create and activate Virtual Environments
+Создайте и активируйте виртуальное окружение
 
 ```bash
   python3 -m venv venv
   source venv/bin/activate
 ```
 
-Install dependencies
+Установите зависимости
 
 ```bash
   pip install -r Requirments.txt
 ```
 
-Start the project
+Запустите скрипт
 
 ```bash
-  python manage.py 
+  make run
 ```
 
+## Автор
 
-## How to track all tickers
-
-- To learn API documentation about getting response with list of tickers in one request
-- To optimize the frequency of maximum ticker's cost requests to reduce operating time
-- To use Threading or Multiprocessing
-
-
-
-## Author
-
-- [@vap3003](https://www.github.com/vap3003)
+- [GitHub](https://www.github.com/vap3003)
+- [Telegram](https://t.me/vap3003)
+- [LinkedIn](https://www.linkedin.com/in/vladislav-pavlenko-09a249a0/)
